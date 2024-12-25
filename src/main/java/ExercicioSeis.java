@@ -1,8 +1,6 @@
-import java.time.LocalDate;
-import java.time.LocalTime;
+
 import java.time.Month;
 import java.time.Year;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ExercicioSeis {
@@ -27,14 +25,6 @@ public class ExercicioSeis {
             this.numero = numero;
         }
 
-        public int getNumero() {
-            return numero;
-        }
-
-        public Month toMonth() {
-            return Month.of(numero);
-        }
-
         public int diasMes(int ano) {
             return Month.of(numero).length(Year.isLeap(ano));
         }
@@ -57,7 +47,4 @@ public class ExercicioSeis {
         sc.close();
 
     }
-
-
-
 }

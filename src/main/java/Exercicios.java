@@ -12,8 +12,9 @@ public class Exercicios {
         2 - Utilização de Optional
         3 - Strings primeiro e ultimo
         4 - Palindromos
-        5 - stream lowercase
+        5 - Stream lowercase
         6 - Enum meses do ano
+        7 - Cotação de moedas
         """);
         int resposta = s.nextInt();
 
@@ -24,6 +25,7 @@ public class Exercicios {
             case 4 -> ExercicioQuatro.solucao();
             case 5 -> exercicioCinco();
             case 6 -> exercicioSeis();
+            case 7 -> exercicioSete();
             default -> System.out.println("Exercício não cadastrado.");
         }
     }
@@ -34,6 +36,11 @@ public class Exercicios {
 
     private static void exercicioSeis(){
         ExercicioSeis exercicio = new ExercicioSeis();
+        exercicio.solucao();
+    }
+
+    private static void exercicioSete() {
+        ExercicioSete exercicio = new ExercicioSete();
         exercicio.solucao();
     }
 }
